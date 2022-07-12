@@ -31,7 +31,7 @@ public interface ApiHistory {
             .create();
 
     ApiHistory  API_HISTORY = new Retrofit.Builder()
-            .baseUrl("https://model-fashion.herokuapp.com/")
+            .baseUrl("http://103.179.189.107:5000/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiHistory.class);

@@ -22,7 +22,7 @@ public final class ApiClient {
         OkHttpClient client = provideHttpClient(context);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://model-fashion.herokuapp.com")
+                .baseUrl("http://103.179.189.107:5000")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
